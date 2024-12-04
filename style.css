@@ -112,6 +112,7 @@ footer {
 
     & h2 {
       font-size: 3rem;
+      text-align: center;
     }
 
     & .info-task {
@@ -125,6 +126,11 @@ footer {
       & h2 {
         max-width: 45rem;
         overflow: auto;
+
+        @media (max-width: 768px) {
+          max-width: 30rem;
+          font-size: 2.2rem;
+        }
       }
 
       & .description-container {
@@ -135,6 +141,10 @@ footer {
         & #desc-task {
           border: solid 0.1rem var(--cinza-1);
           padding: 1rem;
+
+          @media (max-width: 768px) {
+            font-size: 1.6rem;
+          }
         }
       }
 
@@ -146,6 +156,10 @@ footer {
         align-self: end;
         color: var(--branco-1);
         border-radius: 1rem;
+
+        @media (max-width: 768px) {
+          font-size: 1.6rem;
+        }
 
         &.pending {
           background-color: var(--vermelho-eagle);
@@ -250,6 +264,10 @@ footer {
   justify-content: center;
   gap: 3rem;
 
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+
   & button {
     font-size: 2.2rem;
     padding: 1rem 2rem;
@@ -257,6 +275,11 @@ footer {
     background-color: var(--azul-eagle);
     color: var(--branco-1);
     border: solid 0.1rem var(--branco-1);
+
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+      padding: 0.5rem 1rem;
+    }
 
     &:hover {
       background-color: var(--branco-1);
